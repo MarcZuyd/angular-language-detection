@@ -1,0 +1,17 @@
+<div>
+
+    <app-output *ngIf="this.languageDetection.bigramResult"
+        [detectionResult]="this.languageDetection.bigramResult"
+        [ngram]="bigram">
+    </app-output>
+    
+    <app-output *ngIf="this.languageDetection.trigramResult"
+        [detectionResult]="this.languageDetection.trigramResult"
+        [ngram]="trigram">
+    </app-output>
+
+</div>
+
+
+
+      

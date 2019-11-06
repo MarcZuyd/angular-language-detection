@@ -1,0 +1,50 @@
+
+<mat-card class="card">
+    <mat-card-header>
+        
+        <mat-card-title><h1>{{detectionResult.language}}</h1>
+        </mat-card-title>
+        <mat-card-subtitle>{{ ngram }} results</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets/flags/{{detectionResult.language}}.png" alt="flag">
+    <mat-card-content>
+        <table style="width:100%">
+            <tr>
+                <th>Language</th>
+                <th>Probability</th>
+            </tr>
+            <br>
+            <tr>
+                <td>Arabic</td>
+                <td>{{detectionResult.pArabic}}</td>
+             
+            </tr>
+            <tr>
+                <td>Dutch</td>
+                <td>{{detectionResult.pDutch}}</td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td>{{detectionResult.pEnglish}}</td>
+            </tr>
+
+            <tr>
+                <td>French</td>
+                <td>{{detectionResult.pFrench}}</td>
+            </tr>
+
+            <tr>
+                <td>German</td>
+                <td>{{detectionResult.pGerman}}</td>
+            </tr>
+
+            <tr>
+                <td>Russian</td>
+                <td>{{detectionResult.pRussian}}</td>
+            </tr>
+        </table> 
+    </mat-card-content>
+
+</mat-card>
+  
